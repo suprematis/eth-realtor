@@ -635,19 +635,19 @@ button.twitter:after,
 input[type=submit].twitter:after {
   background: #2c8dd0;
 }
-.store-selector {
+.market-selector {
   background: #fff;
-  max-width: 500px;
+  max-width: 1000px;
   margin: 50px auto;
   padding: 2rem;
   border: 2px solid #000;
 }
-.store-selector input,
-.store-selector button {
+.market-selector input,
+.market-selector button {
   width: 100%;
 }
-.store-selector input[type="text"],
-.store-selector button[type="text"] {
+.market-selector input[type="text"],
+.market-selector button[type="text"] {
   text-align: center;
   font-size: 3rem;
 }
