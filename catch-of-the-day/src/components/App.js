@@ -8,8 +8,8 @@ class App extends React.Component {
     return (
       <div className="catch-of-the-day">
         <Header tagline="California" />
-        <Inventory />
         <Order />
+        <Inventory />
       </div>
     )
   }
