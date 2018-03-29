@@ -447,7 +447,7 @@ ul.order li span.count span {
 .order-title {
   text-align: center;
 }
-.fish-edit {
+.property-edit {
   margin-bottom: 20px;
   border: 2px solid #000;
   overflow: hidden;
@@ -457,10 +457,10 @@ ul.order li span.count span {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.fish-edit input,
-.fish-edit textarea,
-.fish-edit select {
-  width: 33.33%;
+.property-edit input,
+.property-edit textarea,
+.property-edit select {
+  width: 100%;
   padding: 10px;
   line-height: 1;
   font-size: 1.2rem;
@@ -473,19 +473,19 @@ ul.order li span.count span {
   border-radius: 0;
   background: #fff;
 }
-.fish-edit input:focus,
-.fish-edit textarea:focus,
-.fish-edit select:focus {
+.property-edit input:focus,
+.property-edit textarea:focus,
+.property-edit select:focus {
   outline: 0;
   background: #fef2de;
 }
-.fish-edit textarea {
+.property-edit textarea {
   width: 100%;
 }
-.fish-edit input:last-of-type {
+.property-edit input:last-of-type {
   width: 100%;
 }
-.fish-edit button {
+.property-edit button {
   width: 100%;
   border: 0;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { getFunName } from "../helpers";
+
 class MarketPicker extends React.Component {
   UserInput = React.createRef();
 
