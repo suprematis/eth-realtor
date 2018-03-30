@@ -26,7 +26,7 @@ class App extends React.Component {
     return (
       <div className="catch-of-the-day">
         <div className="menu">
-          <Header tagline="California" />
+          <Header tagline="City of Palo Alto" />
           <ul className="properties">
             {Object.keys(this.state.properties).map(key => (
               <Property key={key} details={this.state.properties[key]} />

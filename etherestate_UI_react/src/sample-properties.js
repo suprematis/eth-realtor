@@ -1,84 +1,68 @@
-// This is just some sample data so you don't have to think of your own!
-const fishes = {
-  fish1: {
-    name: "Pacific Halibut",
-    image: "/images/hali.jpg",
-    desc:
-      "Everyones favorite white fish. We will cut it to the size you need and ship it.",
-    price: 1724,
-    status: "available"
-  },
-
-  fish2: {
-    name: "Lobster",
-    image: "/images/lobster.jpg",
-    desc:
-      "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
-    price: 3200,
-    status: "available"
-  },
-
-  fish3: {
-    name: "Sea Scallops",
-    image: "/images/scallops.jpg",
-    desc:
-      "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
-    price: 1684,
-    status: "unavailable"
-  },
-
-  fish4: {
-    name: "Mahi Mahi",
-    image: "/images/mahi.jpg",
-    desc:
-      "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
-    price: 1129,
-    status: "available"
-  },
-
-  fish5: {
-    name: "King Crab",
-    image: "/images/crab.jpg",
-    desc:
-      "Crack these open and enjoy them plain or with one of our cocktail sauces",
-    price: 4234,
-    status: "available"
-  },
-
-  fish6: {
-    name: "Atlantic Salmon",
-    image: "/images/salmon.jpg",
-    desc:
-      "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
-    price: 1453,
-    status: "available"
-  },
-
-  fish7: {
-    name: "Oysters",
-    image: "/images/oysters.jpg",
-    desc: "A soft plump oyster with a sweet salty flavor and a clean finish.",
-    price: 2543,
-    status: "available"
-  },
-
-  fish8: {
-    name: "Mussels",
-    image: "/images/mussels.jpg",
-    desc:
-      "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
-    price: 425,
-    status: "available"
-  },
-
-  fish9: {
-    name: "Jumbo Prawns",
-    image: "/images/prawns.jpg",
-    desc:
-      "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
-    price: 2250,
-    status: "available"
-  }
+const properties = {
+ "005dd1adbb429ced": {
+ "HASH": [ "005dd1adbb429ced" ],
+"LON": [ "-122.1089226" ],
+"LAT": [ "37.3922376" ],
+"NUMBER": [ "596" ],
+"STREET": [ "Panchita Way" ],
+"POSTCODE": [ "94022" ]
+},
+"0078f8ff86f5bd8c": {
+ "HASH": [ "0078f8ff86f5bd8c" ],
+"LON": [ "-122.1582544" ],
+"LAT": [ "37.4445532" ],
+"NUMBER": [ "332" ],
+"STREET": [ "Forest Avenue" ],
+"POSTCODE": [ "94301" ]
+},
+"0126677af99811b3": {
+ "HASH": [ "0126677af99811b3" ],
+"LON": [ "-122.1628189" ],
+"LAT": [ "37.4499494" ],
+"NUMBER": [ "225" ],
+"STREET": [ "Kipling Street" ],
+"POSTCODE": [ "94301" ]
+},
+"023bbbd558ed0fd1": {
+ "HASH": [ "023bbbd558ed0fd1" ],
+"LON": [ "-122.1264295" ],
+"LAT": [ "37.4331987" ],
+"NUMBER": [ "746" ],
+"STREET": [ "San Carlos Court" ],
+"POSTCODE": [ "94306" ]
+},
+"02f2cd96786ea36a": {
+ "HASH": [ "02f2cd96786ea36a" ],
+"LON": [ "-122.1266958" ],
+"LAT": [ "37.4370531" ],
+"NUMBER": [ "2637" ],
+"STREET": [ "Marshall Drive" ],
+"POSTCODE": [ "94303" ]
+},
+"03137a4ab8d13efe": {
+ "HASH": [ "03137a4ab8d13efe" ],
+"LON": [ "-122.1592329" ],
+"LAT": [ "37.4411497" ],
+"NUMBER": [ "800" ],
+"STREET": [ "High Street" ],
+"POSTCODE": [ "94301" ]
+},
+"04114e0d7ce38fdb": {
+ "HASH": [ "04114e0d7ce38fdb" ],
+"LON": [ "-122.159464" ],
+"LAT": [ "37.449696" ],
+"NUMBER": [ "415" ],
+"STREET": [ "Tasso Street" ],
+"POSTCODE": [ "94301" ]
+},
+"0416e296d52db0f2": {
+ "HASH": [ "0416e296d52db0f2" ],
+"LON": [ "-122.1243914" ],
+"LAT": [ "37.4086878" ],
+"NUMBER": [ "565" ],
+"STREET": [ "Arastradero Road" ],
+"POSTCODE": [ "94306" ]
+}
 };
 
-export default fishes;
+export default properties;

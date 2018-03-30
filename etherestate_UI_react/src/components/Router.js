@@ -10,6 +10,7 @@ const Router = () => (
     <Switch>
       <Route exact path="/" component={MarketPicker} />
       <Route exact path="/market/:marketId" component={App} />
+      <Route exact path="/random-image-gen" display='./random-image-gen.js'/>
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
