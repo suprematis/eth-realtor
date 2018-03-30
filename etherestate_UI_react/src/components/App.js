@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./Header";
 import Inventory from "./Inventory";
 import sampleProperties from "../sample-properties"
-import Request from "./Request";
+// import Request from "./Request";
 import Property from "./Property";
 // import Order from "./Order"
 
@@ -33,7 +33,8 @@ class App extends React.Component {
             ))}
           </ul>
         </div>
-        <Request />
+        {/* Commenting Request Section */}
+        {/* <Request /> */}
         <Inventory
           addProperty={this.addProperty}
           loadSampleProperties={this.loadSampleProperties}

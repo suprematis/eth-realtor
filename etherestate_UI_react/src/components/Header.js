@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Header = (props) => (
-      <header className="top">
+      <header className="container">
         <h1>Current Housing Listings</h1>
-        <h3 className="tagline">
+        <h3>
           <span>{props.tagline}</span>
         </h3>
       </header>

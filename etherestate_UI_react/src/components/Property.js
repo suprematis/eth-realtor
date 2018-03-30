@@ -3,15 +3,21 @@ import { formatPrice } from "../helpers";
 
 class Property extends React.Component {
   render() {
-    const {HASH, LAT} = this.props.details;
+    const {HASH, LON, LAT, NUMBER, STREET, POSTCODE} = this.props.details;
     return (
       <li className="menu-property">
-        <img src={LAT} alt={LAT} />
-        <h3 className="property-name">{HASH}
-          <span className="price">{formatPrice(LAT)}</span>
+        <p>
+          {/* <span>{HASH}</span><br/> */}
+          <span>Longitude: {LON}</span><br/>
+          <span>Latitude: {LAT}</span><br/>
+          <span>Street Address: {NUMBER} {STREET}</span><br/>
+          <span>Zipcode: {POSTCODE}</span>
+        </p>
+
+        <h3 className="property-name">
+          <span className="price"></span>
         </h3>
-        <p>{LAT}</p>
-          </li>
+      </li>
           )
   }
 }

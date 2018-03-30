@@ -2,7 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 // import MarketPicker from './components/MarketPicker';
 // import App from "./components/App";
-import Router from "./components/Router"
+import Router from "./components/Router";
 import "./css/style.css";
+import "./css/materialize.min.css";
 
 render(<Router />, document.querySelector("#main"));

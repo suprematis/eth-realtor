@@ -24,21 +24,23 @@ class AddPropertyForm extends React.Component {
   };
   render() {
     return (
-        <form className="property-edit" onSubmit={this.createProperty}>
+      <div>
+        <form className="col s12" onSubmit={this.createProperty}>
           <input name="msa" ref={this.msaRef} type="text" placeholder="Municipal Street Address" />
           <input name="cb" ref={this.cbRef} type="text" placeholder="City Block" />
           <input name="coun" ref={this.counRef} type="text" placeholder="County" />
           <input name="ci" ref={this.ciRef} type="text" placeholder="City" />
           <input name="emd" ref={this.emdRef} type="text" placeholder="Earnest Money Deposit" />
           <input name="dddate" ref={this.dddateRef} type="text" placeholder="Deposit Delivery Date" />
-            <select name="status">
+          <select name="status">
             <option value="On The Market">On The Market</option>
             <option value="Sold">Sold</option>
             <option value="Closing">Closing</option>
           </select>
-          <button type="submit">+ Add Property</button>
-            </form>
-    );
+        </form>
+        <button type="submit" className="waves-effect waves-light btn">+ Add Property</button>
+      </div>
+      );
   }
 }
 
