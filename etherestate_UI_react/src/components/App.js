@@ -26,11 +26,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row indigo darken-2 outer">
-          <div className="col s2 sidenav">
-            <Dashboard />
+        <div className="row">
+          <div className="col s2 sidenav blue darken-4">
+            <Dashboard
+              addProperty={this.addProperty}
+              loadSampleProperties={this.loadSampleProperties}
+            />
           </div>
-          <div className="col s6 indigo lighten-5 left">
+          <div className="col s7">
             <Header tagline="City of Palo Alto" />
             <ul className="properties">
               {Object.keys(this.state.properties).map(key => (
@@ -40,7 +43,7 @@ class App extends React.Component {
           </div>
           {/* Commenting Request Section */}
           {/* <Request /> */}
-          <div className="col s4">
+          <div className="col s3">
             <Inventory
               addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
