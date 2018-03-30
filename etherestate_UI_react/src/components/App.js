@@ -1,4 +1,5 @@
 import React from 'react';
+import Dashboard from "./Dashboard"
 import Header from "./Header";
 import Inventory from "./Inventory";
 import sampleProperties from "../sample-properties"
@@ -24,24 +25,31 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="catch-of-the-day">
-        <div className="menu">
-          <Header tagline="City of Palo Alto" />
-          <ul className="properties">
-            {Object.keys(this.state.properties).map(key => (
-              <Property key={key} details={this.state.properties[key]} />
-            ))}
-          </ul>
+      <div className="container">
+        <div className="row indigo darken-2 outer">
+          <div className="col s2 sidenav">
+            <Dashboard />
+          </div>
+          <div className="col s6 indigo lighten-5 left">
+            <Header tagline="City of Palo Alto" />
+            <ul className="properties">
+              {Object.keys(this.state.properties).map(key => (
+                <Property key={key} details={this.state.properties[key]} />
+              ))}
+            </ul>
+          </div>
+          {/* Commenting Request Section */}
+          {/* <Request /> */}
+          <div className="col s4">
+            <Inventory
+              addProperty={this.addProperty}
+              loadSampleProperties={this.loadSampleProperties}
+            />
+          </div>
         </div>
-        {/* Commenting Request Section */}
-        {/* <Request /> */}
-        <Inventory
-          addProperty={this.addProperty}
-          loadSampleProperties={this.loadSampleProperties}
-        />
       </div>
-    );
-  }
-}
+        );
+        }
+        }
 
 export default App;
