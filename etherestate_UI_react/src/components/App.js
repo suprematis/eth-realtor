@@ -1,23 +1,43 @@
 import React from 'react';
-import Header from "./Header"
-import Inventory from "./Inventory"
-import Request from "./Request"
+import Header from "./Header";
+import Inventory from "./Inventory";
+import sampleProperties from "../sample-properties"
+import Request from "./Request";
+import Property from "./Property";
 // import Order from "./Order"
 
 class App extends React.Component {
-  state ={
+  state = {
     properties: {},
     request: {}
   };
   addProperty = property => {
-    console.log("Adding Property")
+    // 1. Take a copy
+    const properties = { ...this.state.properties };
+    // 2. Add our new property to the properties variable
+    properties[`property${Date.now()}`] = property;
+    // 3. Set the new properties object to state
+    this.setState({properties})
+  };
+  loadSampleProperties = () => {
+    this.setState({ properties: sampleProperties });
   };
   render() {
     return (
       <div className="catch-of-the-day">
-        <Header tagline="California" />
+        <div className="menu">
+          <Header tagline="California" />
+          <ul className="properties">
+            {Object.keys(this.state.properties).map(key => (
+              <Property key={key} details={this.state.properties[key]} />
+            ))}
+          </ul>
+        </div>
         <Request />
-        <Inventory addProperty={this.addProperty} />
+        <Inventory
+          addProperty={this.addProperty}
+          loadSampleProperties={this.loadSampleProperties}
+        />
       </div>
     );
   }

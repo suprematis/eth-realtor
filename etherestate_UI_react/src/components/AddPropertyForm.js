@@ -19,6 +19,8 @@ class AddPropertyForm extends React.Component {
       emd: parseFloat(this.emdRef.value.value),
       dddate: this.dddateRef.value.value,
     };
+    this.props.addProperty(property);
+    console.log(this);
   };
   render() {
     return (
