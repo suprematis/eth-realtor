@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = (props) => (
       <header className="container">
-        <h2>Current Housing Listings</h2>
-        <h4>
+        <h3 className="medium">Current Housing Listings</h3>
+        <h4 className="medium">
           <span>{props.tagline}</span>
         </h4>
       </header>

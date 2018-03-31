@@ -25,7 +25,7 @@ class AddPropertyForm extends React.Component {
   render() {
     return (
       <div>
-        <form className="col s12" onSubmit={this.createProperty}>
+        <form className="col s11" onSubmit={this.createProperty}>
           <input name="msa" ref={this.msaRef} type="text" placeholder="Municipal Street Address" />
           <input name="cb" ref={this.cbRef} type="text" placeholder="City Block" />
           <input name="coun" ref={this.counRef} type="text" placeholder="County" />

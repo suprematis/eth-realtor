@@ -5,6 +5,7 @@ import Inventory from "./Inventory";
 import sampleProperties from "../sample-properties"
 // import Request from "./Request";
 import Property from "./Property";
+import GoogleMaps from "./GoogleMaps"
 // import Order from "./Order"
 
 class App extends React.Component {
@@ -33,7 +34,7 @@ class App extends React.Component {
               loadSampleProperties={this.loadSampleProperties}
             />
           </div>
-          <div className="col s7">
+          <div className="col s6">
             <Header tagline="City of Palo Alto" />
             <ul className="properties">
               {Object.keys(this.state.properties).map(key => (
@@ -43,11 +44,11 @@ class App extends React.Component {
           </div>
           {/* Commenting Request Section */}
           {/* <Request /> */}
-          <div className="col s3">
-            <Inventory
+          <div className="col s4">
+            {/* <Inventory
               addProperty={this.addProperty}
-              loadSampleProperties={this.loadSampleProperties}
-            />
+            loadSampleProperties={this.loadSampleProperties} */}
+            <GoogleMaps />
           </div>
         </div>
       </div>
