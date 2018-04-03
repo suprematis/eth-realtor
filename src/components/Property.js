@@ -5,10 +5,10 @@ class Property extends React.Component {
   render() {
     const {HASH, LON, LAT, NUMBER, STREET, POSTCODE} = this.props.details;
     return (
-      <div className="col s10">
+      <div className="col s11">
         <div className="row">
-          <div className="card blue-grey darken-1">
-            <div className="card-content white-text">
+          <div className="card">
+            <div className="card-content">
               <li className="menu-property">
                 <p>
                   <span>Longitude: {LON}</span><br/>

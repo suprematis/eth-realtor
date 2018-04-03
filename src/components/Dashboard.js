@@ -3,7 +3,7 @@ import React from 'react';
 class Dashboard extends React.Component {
   render() {
     return (
-      <div className="white-text">
+      <div className="white-text dashboard">
         <h4>ETHERESTATE</h4>
         <ul className="collection blue darken-4">
           <li className="collection-item blue darken-4">Dashboard</li>

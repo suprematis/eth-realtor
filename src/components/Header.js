@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = (props) => (
-      <header className="container">
+      <header>
         <h3 className="medium">Current Housing Listings</h3>
         <h4 className="medium">
           <span>{props.tagline}</span>

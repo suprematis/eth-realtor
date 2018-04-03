@@ -9037,3 +9037,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+
+ /* Custom CSS */
+
+ .dashboard h4 {
+   font-size: 1.5rem;
+ }

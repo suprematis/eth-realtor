@@ -255,7 +255,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: 'haymakerregular', sans-serif;
+  /* font-family: 'haymakerregular', sans-serif; */
 }
 h2 {
   text-align: center;
@@ -264,6 +264,10 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+}
+
+.dashboard h4 {
+  font-size: 0.5rem;
 }
 header.top {
   text-align: center;
