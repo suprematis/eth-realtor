@@ -26,30 +26,34 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div className="container property-browser">
         <div className="row">
-          <div className="col s2 blue darken-4">
+          <div className="col s12 m4 l2 blue darken-4">
             <Dashboard
               addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
             />
           </div>
+
+
+          <div className="col s12 m8 l5">
+            <Header tagline="City of Palo Alto" />
+            <ul className="properties">
+              {Object.keys(this.state.properties).map(key => (
+                <Property key={key} details={this.state.properties[key]} />
+              ))}
+            </ul>
+          </div>
+
           <div className="row">
-            <div className="col s6 ">
-              <Header tagline="City of Palo Alto" />
-              <ul className="properties">
-                {Object.keys(this.state.properties).map(key => (
-                  <Property key={key} details={this.state.properties[key]} />
-                ))}
-              </ul>
-            </div>
-            <div className="col s4">
+            <div className="col s12 m8 l5">
               {/* <Inventory
                 addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties} */}
               <GoogleMaps />
             </div>
           </div>
+
           {/* Commenting Request Section */}
           {/* <Request /> */}
 

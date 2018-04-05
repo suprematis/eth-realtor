@@ -5,7 +5,7 @@ class Property extends React.Component {
   render() {
     const {HASH, LON, LAT, NUMBER, STREET, POSTCODE} = this.props.details;
     return (
-      <div className="col s11">
+      <div className="col s12">
         <div className="row">
           <div className="card">
             <div className="card-content">
