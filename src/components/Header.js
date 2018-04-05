@@ -4,7 +4,7 @@ const Header = (props) => (
       <header>
         <h3 className="medium">Current Housing Listings</h3>
         <h4 className="medium">
-          <span>{props.tagline}</span>
+          <span>{props.locality}</span>
         </h4>
       </header>
 );

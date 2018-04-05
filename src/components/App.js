@@ -37,7 +37,7 @@ class App extends React.Component {
 
 
           <div className="col s12 m8 l6">
-            <Header tagline="City of Palo Alto" />
+            <Header locality="City of Palo Alto" />
             <ul className="properties">
               {Object.keys(this.state.properties).map(key => (
                 <Property key={key} details={this.state.properties[key]} />
