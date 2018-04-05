@@ -26,7 +26,7 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="container property-browser">
+      <div className="property-browser">
         <div className="row">
           <div className="col s12 m4 l2 blue darken-4">
             <Dashboard
@@ -36,7 +36,7 @@ class App extends React.Component {
           </div>
 
 
-          <div className="col s12 m8 l5">
+          <div className="col s12 m8 l6">
             <Header tagline="City of Palo Alto" />
             <ul className="properties">
               {Object.keys(this.state.properties).map(key => (
@@ -46,7 +46,7 @@ class App extends React.Component {
           </div>
 
           <div className="row">
-            <div className="col s12 m8 l5">
+            <div className="col s12 m8 l4">
               {/* <Inventory
                 addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties} */}

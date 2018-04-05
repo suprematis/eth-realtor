@@ -9040,6 +9040,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
  /* Custom CSS */
 
- .dashboard h4 {
+.dashboard h4 {
    font-size: 1.5rem;
  }
+
+.dashboard a{
+  margin: 0.25rem;
+}
