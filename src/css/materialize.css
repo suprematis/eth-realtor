@@ -4754,8 +4754,8 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .card .card-title.activator {
@@ -4900,6 +4900,9 @@ small {
 
 .card .card-content .card-title i {
   line-height: 32px;
+}
+
+.card .card-content .card-title .property-card span {
 }
 
 .card .card-action {
@@ -9044,6 +9047,28 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
    font-size: 1.5rem;
  }
 
-.dashboard a{
+.dashboard a {
   margin: 0.25rem;
+}
+
+.property-card span {
+  font-size: 1.25rem;
+}
+
+.card-content .row .col .material-icons.property-card {
+  margin-right:15px;
+}
+
+.card-title .property-card span {
+  margin-top: -10px;
+}
+
+.property-card span.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 2px 0 0 10px;
+}
+
+.card .card-title.property-card i {
+  margin-right: 0.125rem
 }

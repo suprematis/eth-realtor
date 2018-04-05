@@ -669,3 +669,16 @@ input[type=submit].twitter:after {
 .medium {
   font-size: 1.5rem;
 }
+
+.property-card span {
+  font-size: 1.25rem;
+}
+
+.card-title .property-card span {
+  margin-top: -10px;
+}
+
+.card .card-title .property-card span {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
