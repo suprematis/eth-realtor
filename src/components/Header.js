@@ -2,10 +2,14 @@ import React from 'react';
 
 const Header = (props) => (
       <header>
-        <h3 className="medium">Current Housing Listings</h3>
-        <h4 className="medium">
-          <span>{props.locality}</span>
-        </h4>
+        <div className="row">
+          <div className="col s11 m11 l11">
+            <h2>Overview</h2>
+            <h3>
+              <span>{props.locality}</span>
+            </h3>
+          </div>
+        </div>
       </header>
 );
 

@@ -9051,6 +9051,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   margin: 0.25rem;
 }
 
+ul.row.properties.property-card {
+  overflow: scroll;
+
+}
 .property-card span {
   font-size: 1.25rem;
 }
@@ -9071,4 +9075,21 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .card .card-title.property-card i {
   margin-right: 0.125rem
+}
+
+
+.royal-purple {
+  background-color: #43425D !important;
+}
+
+.royal-purple-text {
+  color: #9c27b0 !important;
+}
+
+.royal-purple.lighten-5 {
+  background-color: #f3e5f5 !important;
+}
+
+.royal-text.text-lighten-5 {
+  color: #f3e5f5 !important;
 }

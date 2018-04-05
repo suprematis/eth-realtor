@@ -11,7 +11,8 @@ import GoogleMaps from "./GoogleMaps"
 class App extends React.Component {
   state = {
     properties: {},
-    request: {}
+    request: {},
+    locate: {}
   };
   addProperty = property => {
     // 1. Take a copy
@@ -24,34 +25,35 @@ class App extends React.Component {
   loadSampleProperties = () => {
     this.setState({ properties: sampleProperties });
   };
+  centerPropertyGoogleMap = () => {
+    alert("Loading Map");
+  };
   render() {
     return (
       <div className="property-browser">
         <div className="row">
-          <div className="col s12 m4 l2 blue darken-4">
+          <div className="col s12 m4 l2 royal-purple">
             <Dashboard
               addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
             />
           </div>
-
-
-          <div className="col s12 m8 l6">
+          <div className="property-listing col s12 m8 l6">
             <Header locality="City of Palo Alto" />
-            <ul className="properties">
+            <ul className="row properties">
               {Object.keys(this.state.properties).map(key => (
-                <Property key={key} details={this.state.properties[key]} />
+                <Property centerPropertyGoogleMap={this.centerPropertyGoogleMap}
+                  key={key}
+                  details={this.state.properties[key]} />
               ))}
             </ul>
           </div>
 
-          <div className="row">
-            <div className="col s12 m8 l4">
-              {/* <Inventory
+          <div className="col s12 m8 l4">
+            {/* <Inventory
                 addProperty={this.addProperty}
-              loadSampleProperties={this.loadSampleProperties} */}
-              <GoogleMaps />
-            </div>
+            loadSampleProperties={this.loadSampleProperties} */}
+            <GoogleMaps />
           </div>
 
           {/* Commenting Request Section */}

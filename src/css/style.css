@@ -258,7 +258,6 @@ h6 {
   /* font-family: 'haymakerregular', sans-serif; */
 }
 h2 {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -670,6 +669,16 @@ input[type=submit].twitter:after {
   font-size: 1.5rem;
 }
 
+.property-listing .property-card div.card {
+
+}
+
+.property-listing .card-content span.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .property-card span {
   font-size: 1.25rem;
 }
@@ -681,4 +690,12 @@ input[type=submit].twitter:after {
 .card .card-title .property-card span {
   font-size: 1.75rem;
   font-weight: 500;
+}
+
+.property-listing {
+
+}
+
+.property-listing h2 {
+  font-weight: 800;
 }
