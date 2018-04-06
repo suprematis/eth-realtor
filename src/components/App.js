@@ -25,8 +25,15 @@ class App extends React.Component {
   loadSampleProperties = () => {
     this.setState({ properties: sampleProperties });
   };
-  centerPropertyGoogleMap = () => {
-    alert("Loading Map");
+  centerPropertyGoogleMap = (key) => {
+    // alert("Loading Map");
+    // 1. take a copy of state
+  const locate = { ...this.state.locate };
+    // 2. Pass location to locate
+  locate[key] = 1 ;
+    // 3. Call setState to update our state object
+  this.setState({ locate });
+
   };
   render() {
     return (
@@ -44,6 +51,7 @@ class App extends React.Component {
               {Object.keys(this.state.properties).map(key => (
                 <Property centerPropertyGoogleMap={this.centerPropertyGoogleMap}
                   key={key}
+                  index={key}
                   details={this.state.properties[key]} />
               ))}
             </ul>

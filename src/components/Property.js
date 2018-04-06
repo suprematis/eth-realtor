@@ -3,6 +3,9 @@ import { formatPrice } from "../helpers";
 // import * as materialize from "../materialize";
 
 class Property extends React.Component {
+  handleClick = () => {
+    this.props.centerPropertyGoogleMap(this.props.index);
+  }
   render() {
     const {HASH, LON, LAT, NUMBER, STREET, POSTCODE} = this.props.details;
     return (
@@ -22,7 +25,7 @@ class Property extends React.Component {
                 <span>Latitude: {LAT}</span><br/> */}
                 <span>{NUMBER} {STREET}</span><br/>
                 <span>{POSTCODE}</span><br/>
-                <button onClick={this.props.centerPropertyGoogleMap}>Locate on Map</button>
+                <button onClick={this.handleClick}>Locate on Map</button>
               </p>
               {/* <h3 className="property-name">
                   <span className="price"></span>
