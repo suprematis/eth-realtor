@@ -12,7 +12,7 @@ class Property extends React.Component {
 <div className="col s12 m12 l12">
   <div className="card horizontal">
     <div className="card-image">
-      <img className="activator" alt="" src="https://placeimg.com/100/250/arch" />
+      <img className="activator" alt="" src="https://placeimg.com/250/250/arch" />
     </div>
     <div className="card-stacked">
       <div className="card-content">
@@ -24,7 +24,7 @@ class Property extends React.Component {
         </div>
       </div>
       <div className="card-action">
-        <button className="s12 m12 l12" onClick={this.handleClick}>Locate on Map</button>
+        <button onClick={this.props.centerPropertyGoogleMap}>Locate on Map</button>
         <span className="white-text badge red">Sold</span>
 
       </div>

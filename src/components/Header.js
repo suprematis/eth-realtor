@@ -5,9 +5,7 @@ const Header = (props) => (
         <div className="row">
           <div className="col s11 m11 l11">
             <h2>Overview</h2>
-            <h3>
-              <span>{props.locality}</span>
-            </h3>
+            <span>{props.locality}</span>
           </div>
         </div>
       </header>

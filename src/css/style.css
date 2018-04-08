@@ -340,10 +340,10 @@ header.top h3:after {
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 5vh;
-  -webkit-perspective: 1000px;
+  /* -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+          transform-style: preserve-3d; */
 }
 .property-browser > * {
   -webkit-box-flex: 1;
@@ -683,6 +683,14 @@ input[type=submit].twitter:after {
   font-weight: 800;
 }
 
+.map-details {
+  overflow: hidden;
+}
+
 .gmaps {
+  height: 50vh;
+}
+
+.test {
   height: 50vh;
 }

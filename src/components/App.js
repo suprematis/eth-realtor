@@ -3,16 +3,22 @@ import Dashboard from "./Dashboard"
 import Header from "./Header";
 import Inventory from "./Inventory";
 import sampleProperties from "../sample-properties"
+import lat from "../lat"
 // import Request from "./Request";
 import Property from "./Property";
 import GoogleMaps from "./GoogleMaps"
 // import Order from "./Order"
 
+var inLine = {
+  'font-size': '12px'
+}
+
 class App extends React.Component {
   state = {
     properties: {},
     request: {},
-    locate: {}
+    locate: {},
+    lat: {}
   };
   addProperty = property => {
     // 1. Take a copy
@@ -25,19 +31,11 @@ class App extends React.Component {
   loadSampleProperties = () => {
     this.setState({ properties: sampleProperties });
   };
-  centerPropertyGoogleMap = (key) => {
-    // alert("Loading Map");
-    // 1. take a copy of state
-  const locate = { ...this.state.locate };
-    // 2. Pass location to locate
-  locate[key] = 1 ;
-    // 3. Call setState to update our state object
-  this.setState({ locate });
-
+  centerPropertyGoogleMap = () => {
+    this.setState({ lat: lat });
   };
   render() {
     return (
-      <div>
         <div className="row property-browser">
           <div className="col s12 m4 l2 royal-purple">
             <Dashboard
@@ -45,13 +43,14 @@ class App extends React.Component {
               loadSampleProperties={this.loadSampleProperties}
             />
           </div>
-          <div className="property-listing col s12 m8 l6">
+          <div className="property-listing col s12 m6 l6">
             <Header />
             <div className="row properties">
               <div className="col s12 m12 l12">
                 <h3 className="col s12 m12 l12">Properties available in the city of Palo Alto</h3>
                 {Object.keys(this.state.properties).map(key => (
-                  <Property centerPropertyGoogleMap={this.centerPropertyGoogleMap}
+                  <Property
+                    centerPropertyGoogleMap={this.centerPropertyGoogleMap}
                     key={key}
                     index={key}
                     details={this.state.properties[key]} />
@@ -60,19 +59,35 @@ class App extends React.Component {
             </div>
           </div>
 
-          <div className="col s12 m8 l4 gmaps">
+          <div className="map-details col s12 m8 l4">
             {/* <Inventory
                 addProperty={this.addProperty}
             loadSampleProperties={this.loadSampleProperties} */}
-            <GoogleMaps />
-            <div>Test</div>
+            <GoogleMaps
+              details={this.state.lat} />
+            <div className="row">
+              <div className="col s12">
+                <div className="card">
+                  <div className="card-content">
+                    <span className="card-title">Property Details</span>
+                    <p style={inLine}>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div className="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
 
           {/* Commenting Request Section */}
           {/* <Request /> */}
 
         </div>
-      </div>
+
         );
         }
         }
