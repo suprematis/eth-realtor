@@ -37,8 +37,8 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="property-browser">
-        <div className="row">
+      <div>
+        <div className="row property-browser">
           <div className="col s12 m4 l2 royal-purple">
             <Dashboard
               addProperty={this.addProperty}
@@ -46,22 +46,26 @@ class App extends React.Component {
             />
           </div>
           <div className="property-listing col s12 m8 l6">
-            <Header locality="City of Palo Alto" />
-            <ul className="row properties">
-              {Object.keys(this.state.properties).map(key => (
-                <Property centerPropertyGoogleMap={this.centerPropertyGoogleMap}
-                  key={key}
-                  index={key}
-                  details={this.state.properties[key]} />
-              ))}
-            </ul>
+            <Header />
+            <div className="row properties">
+              <div className="col s12 m12 l12">
+                <h3 className="col s12 m12 l12">Properties available in the city of Palo Alto</h3>
+                {Object.keys(this.state.properties).map(key => (
+                  <Property centerPropertyGoogleMap={this.centerPropertyGoogleMap}
+                    key={key}
+                    index={key}
+                    details={this.state.properties[key]} />
+                ))}
+              </div>
+            </div>
           </div>
 
-          <div className="col s12 m8 l4">
+          <div className="col s12 m8 l4 gmaps">
             {/* <Inventory
                 addProperty={this.addProperty}
             loadSampleProperties={this.loadSampleProperties} */}
             <GoogleMaps />
+            <div>Test</div>
           </div>
 
           {/* Commenting Request Section */}

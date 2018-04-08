@@ -336,7 +336,7 @@ header.top h3:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 95vh;
+  height: 90vh;
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 5vh;
@@ -362,8 +362,9 @@ header.top h3:after {
 .property-browser > *:first-child {
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+      overflow: hidden;
   /* -webkit-transform: translateX(50%) rotateY(6deg) translateX(-50%);
           transform: translateX(50%) rotateY(6deg) translateX(-50%); */
 }
@@ -382,29 +383,7 @@ header.top h3:after {
   /* -webkit-transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px);
           transform: translateX(-50%) rotateY(10deg) translateX(50%) scale(1.08) translateX(24px); */
 }
-/* input#fold:not(:checked) ~ #main .property-browser > * {
-  -webkit-transform: none;
-          transform: none;
-}
-label[for="fold"] {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  background: #000;
-  color: #fff;
-  border: 2px solid #000;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-}
-input#fold {
-  display: none;
-}
-input#fold:checked + label {
-  background: #fff;
-  color: #000;
-} */
+
 ul {
   list-style: none;
   margin: 0;
@@ -669,8 +648,12 @@ input[type=submit].twitter:after {
   font-size: 1.5rem;
 }
 
-.property-listing .property-card div.card {
+.property-browser {
 
+}
+
+.property-listing .property-card div.card {
+  overflow: scroll;
 }
 
 .property-listing .card-content span.card-title {
@@ -698,4 +681,8 @@ input[type=submit].twitter:after {
 
 .property-listing h2 {
   font-weight: 800;
+}
+
+.gmaps {
+  height: 50vh;
 }
