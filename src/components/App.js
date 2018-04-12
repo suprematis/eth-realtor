@@ -34,7 +34,7 @@ class App extends React.Component {
     this.setState({ properties: sampleProperties });
   };
   centerPropertyGoogleMap = () => {
-    this.setState({ locate: lat });
+    this.setState({ locate: sampleProperties });
   };
   render() {
     return (
@@ -43,7 +43,7 @@ class App extends React.Component {
             <Dashboard
               addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
-              centerPropertyGoogleMap={this.centerPropertyGoogleMap}
+              // centerPropertyGoogleMap={this.centerPropertyGoogleMap}
             />
           </div>
           <div className="property-listing col s12 m6 l6">
@@ -54,7 +54,8 @@ class App extends React.Component {
                 {Object.keys(this.state.properties).map(key => (
                   <Property
                     key={key}
-                    index={key}
+                    // latitude={this.props.details.lat}
+                    centerPropertyGoogleMap={this.centerPropertyGoogleMap}
                     details={this.state.properties[key]} />
                 ))}
               </div>
@@ -66,7 +67,7 @@ class App extends React.Component {
             loadSampleProperties={this.loadSampleProperties} */}
             <div>
               <GoogleMaps
-                details={this.state.locate}
+                location={this.state.locate}
                 centerPropertyGoogleMap={this.centerPropertyGoogleMap} />
             </div>
               <div className="row">

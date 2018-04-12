@@ -5,8 +5,8 @@
   "uploadOnSave": true,
   "useAtomicWrites": false,
   "deleteLocal": false,
-  "hostname": "99.73.162.183",
-  "port": "7222",
+  "hostname": "192.168.86.111",
+  "port": "22",
   "ignore": [
     ".remote-sync.json",
     ".git/**"

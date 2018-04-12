@@ -1,67 +1,67 @@
 const properties = {
  "005dd1adbb429ced": {
- "HASH": [ "005dd1adbb429ced" ],
-"LON": [ "-122.1089226" ],
-"LAT": [ "37.3922376" ],
-"NUMBER": [ "596" ],
-"STREET": [ "Panchita Way" ],
-"POSTCODE": [ "94022" ]
+ "hash": [ "005dd1adbb429ced" ],
+"lon": [ "-122.1089226" ],
+"lat": [ "37.3922376" ],
+"number": [ "596" ],
+"street": [ "Panchita Way" ],
+"postcode": [ "94022" ]
 },
 "0078f8ff86f5bd8c": {
- "HASH": [ "0078f8ff86f5bd8c" ],
-"LON": [ "-122.1582544" ],
-"LAT": [ "37.4445532" ],
-"NUMBER": [ "332" ],
-"STREET": [ "Forest Avenue" ],
-"POSTCODE": [ "94301" ]
+ "hash": [ "0078f8ff86f5bd8c" ],
+"lon": [ "-122.1582544" ],
+"lat": [ "37.4445532" ],
+"number": [ "332" ],
+"street": [ "Forest Avenue" ],
+"postcode": [ "94301" ]
 },
 "0126677af99811b3": {
- "HASH": [ "0126677af99811b3" ],
-"LON": [ "-122.1628189" ],
-"LAT": [ "37.4499494" ],
-"NUMBER": [ "225" ],
-"STREET": [ "Kipling Street" ],
-"POSTCODE": [ "94301" ]
+ "hash": [ "0126677af99811b3" ],
+"lon": [ "-122.1628189" ],
+"lat": [ "37.4499494" ],
+"number": [ "225" ],
+"street": [ "Kipling street" ],
+"postcode": [ "94301" ]
 },
 "023bbbd558ed0fd1": {
- "HASH": [ "023bbbd558ed0fd1" ],
-"LON": [ "-122.1264295" ],
-"LAT": [ "37.4331987" ],
-"NUMBER": [ "746" ],
-"STREET": [ "San Carlos Court" ],
-"POSTCODE": [ "94306" ]
+ "hash": [ "023bbbd558ed0fd1" ],
+"lon": [ "-122.1264295" ],
+"lat": [ "37.4331987" ],
+"number": [ "746" ],
+"street": [ "San Carlos Court" ],
+"postcode": [ "94306" ]
 },
 "02f2cd96786ea36a": {
- "HASH": [ "02f2cd96786ea36a" ],
-"LON": [ "-122.1266958" ],
-"LAT": [ "37.4370531" ],
-"NUMBER": [ "2637" ],
-"STREET": [ "Marshall Drive" ],
-"POSTCODE": [ "94303" ]
+ "hash": [ "02f2cd96786ea36a" ],
+"lon": [ "-122.1266958" ],
+"lat": [ "37.4370531" ],
+"number": [ "2637" ],
+"street": [ "Marshall Drive" ],
+"postcode": [ "94303" ]
 },
 "03137a4ab8d13efe": {
- "HASH": [ "03137a4ab8d13efe" ],
-"LON": [ "-122.1592329" ],
-"LAT": [ "37.4411497" ],
-"NUMBER": [ "800" ],
-"STREET": [ "High Street" ],
-"POSTCODE": [ "94301" ]
+ "hash": [ "03137a4ab8d13efe" ],
+"lon": [ "-122.1592329" ],
+"lat": [ "37.4411497" ],
+"number": [ "800" ],
+"street": [ "High street" ],
+"postcode": [ "94301" ]
 },
 "04114e0d7ce38fdb": {
- "HASH": [ "04114e0d7ce38fdb" ],
-"LON": [ "-122.159464" ],
-"LAT": [ "37.449696" ],
-"NUMBER": [ "415" ],
-"STREET": [ "Tasso Street" ],
-"POSTCODE": [ "94301" ]
+ "hash": [ "04114e0d7ce38fdb" ],
+"lon": [ "-122.159464" ],
+"lat": [ "37.449696" ],
+"number": [ "415" ],
+"street": [ "Tasso street" ],
+"postcode": [ "94301" ]
 },
 "0416e296d52db0f2": {
- "HASH": [ "0416e296d52db0f2" ],
-"LON": [ "-122.1243914" ],
-"LAT": [ "37.4086878" ],
-"NUMBER": [ "565" ],
-"STREET": [ "Arastradero Road" ],
-"POSTCODE": [ "94306" ]
+ "hash": [ "0416e296d52db0f2" ],
+"lon": [ "-122.1243914" ],
+"lat": [ "37.4086878" ],
+"number": [ "565" ],
+"street": [ "Arastradero Road" ],
+"postcode": [ "94306" ]
 }
 };
 
