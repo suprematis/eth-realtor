@@ -96,6 +96,7 @@ class App extends React.Component {
               <div className="col s12">
                 <Order
                   order={this.state.order}
+                  properties={this.state.properties}
                 />
               </div>
             </div>

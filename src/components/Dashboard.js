@@ -5,8 +5,8 @@ class Dashboard extends React.Component {
     return (
       <div className="white-text dashboard">
         <h4>ETHERESTATE</h4>
-        <a className="waves-effect waves-light btn-large">Dashboard</a>
-        <a className="waves-effect waves-light btn-large">Add Property</a>
+        {/* <a className="waves-effect waves-light btn-large">Dashboard</a> */}
+        {/* <a className="waves-effect waves-light btn-large">Add Property</a> */}
         <a className="waves-effect waves-light btn-large" onClick={this.props.loadSampleProperties}>Load Sample Properties</a>
         <a className="waves-effect waves-light btn-large" onClick={this.props.centerPropertyGoogleMap}>Map</a>
         {/* <ul className="collection blue darken-4">
