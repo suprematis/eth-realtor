@@ -5,7 +5,7 @@ import { formatPrice } from "../helpers";
 class Property extends React.Component {
   handleClick = () => {
     this.props.centerPropertyGoogleMap(this.props.index);
-  }
+  };
   render() {
     const {HASH, LON, LAT, NUMBER, STREET, POSTCODE} = this.props.details;
     return (
@@ -31,9 +31,6 @@ class Property extends React.Component {
     </div>
   </div>
 </div>
-
-
-
   )
   }
   }

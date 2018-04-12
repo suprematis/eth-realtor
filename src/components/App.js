@@ -1,12 +1,14 @@
 import React from 'react';
-import Dashboard from "./Dashboard"
+import Dashboard from "./Dashboard";
 import Header from "./Header";
 import Inventory from "./Inventory";
-import sampleProperties from "../sample-properties"
-import lat from "../lat"
+import sampleProperties from "../sample-properties";
+import lat from "../lat";
+import MapCont from "./MapCont";
 // import Request from "./Request";
 import Property from "./Property";
-import GoogleMaps from "./GoogleMaps"
+// import GoogleMaps from "./GoogleMaps";
+import GoogleMaps from "./GoogleMaps";
 // import Order from "./Order"
 
 var inLine = {
@@ -17,8 +19,8 @@ class App extends React.Component {
   state = {
     properties: {},
     request: {},
-    locate: {},
-    lat: {}
+    locate: {}
+    // lat: {}
   };
   addProperty = property => {
     // 1. Take a copy
@@ -32,7 +34,7 @@ class App extends React.Component {
     this.setState({ properties: sampleProperties });
   };
   centerPropertyGoogleMap = () => {
-    this.setState({ lat: lat });
+    this.setState({ locate: lat });
   };
   render() {
     return (
@@ -41,6 +43,7 @@ class App extends React.Component {
             <Dashboard
               addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
+              centerPropertyGoogleMap={this.centerPropertyGoogleMap}
             />
           </div>
           <div className="property-listing col s12 m6 l6">
@@ -50,7 +53,6 @@ class App extends React.Component {
                 <h3 className="col s12 m12 l12">Properties available in the city of Palo Alto</h3>
                 {Object.keys(this.state.properties).map(key => (
                   <Property
-                    centerPropertyGoogleMap={this.centerPropertyGoogleMap}
                     key={key}
                     index={key}
                     details={this.state.properties[key]} />
@@ -58,20 +60,22 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="map-details col s12 m8 l4">
             {/* <Inventory
                 addProperty={this.addProperty}
             loadSampleProperties={this.loadSampleProperties} */}
-            <GoogleMaps
-              details={this.state.lat} />
-            <div className="row">
-              <div className="col s12">
-                <div className="card">
-                  <div className="card-content">
-                    <span className="card-title">Property Details</span>
-                    <p style={inLine}>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+            <div>
+              <GoogleMaps
+                details={this.state.locate}
+                centerPropertyGoogleMap={this.centerPropertyGoogleMap} />
+            </div>
+              <div className="row">
+                <div className="col s12">
+                  <div className="card">
+                    <div className="card-content">
+                      <span className="card-title">Property Details</span>
+                      <p style={inLine}>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
                   </div>
                   <div className="card-action">
                     <a href="#">This is a link</a>

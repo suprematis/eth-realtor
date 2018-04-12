@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "99.73.162.183",
+  "port": "7222",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "suprematis",
+  "password": "As032484?",
+  "watch": [],
+  "transport": "scp",
+  "target": "/home/suprematis/CSC690/etherestate_react"
+}
