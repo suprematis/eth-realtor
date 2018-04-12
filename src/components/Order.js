@@ -2,11 +2,14 @@ import React from 'react';
 
 class Order extends React.Component {
   render() {
+    const orderIds = Object.keys(this.props.order);
+
     return (
       <div className="order">
-        Order!!!
+        <h2>Order</h2>
+        {orderIds}
       </div>
-    )
+    );
   }
 }
 
