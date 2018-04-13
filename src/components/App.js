@@ -33,7 +33,7 @@ class App extends React.Component {
   addToOrder = key => {
     // 1. take a copy of setState
     const order = { ...this.state.order };
-    order[key] = order[key] + 1 || 1;
+    order[key] = 1;
     this.setState({ order });
   };
   loadSampleProperties = () => {
@@ -48,9 +48,7 @@ class App extends React.Component {
         <div className="row property-browser">
           <div className="col s12 m4 l2 royal-purple">
             <Dashboard
-              // addProperty={this.addProperty}
               loadSampleProperties={this.loadSampleProperties}
-              // centerPropertyGoogleMap={this.centerPropertyGoogleMap}
             />
           </div>
           <div className="property-listing col s12 m6 l6">
@@ -75,7 +73,7 @@ class App extends React.Component {
             loadSampleProperties={this.loadSampleProperties} */}
             <div>
               <GoogleMaps
-                location={this.state.location}
+                order={this.state.order}
                 properties={this.state.properties}
               />
             </div>
@@ -94,20 +92,16 @@ class App extends React.Component {
                 </div>
               </div> */}
               <div className="col s12">
-                <Order
+                {/* <Order
                   order={this.state.order}
                   properties={this.state.properties}
-                />
+                /> */}
               </div>
             </div>
           </div>
-
-
           {/* Commenting Request Section */}
           {/* <Request /> */}
-
         </div>
-
         );
         }
         }

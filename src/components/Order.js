@@ -1,5 +1,9 @@
 import React from 'react';
 
+var inLine = {
+  'font-size': '12px'
+}
+
 class Order extends React.Component {
   renderOrder = key => {
     const property = this.props.properties[key];
@@ -13,9 +17,7 @@ class Order extends React.Component {
     return (
       <div className="order">
         <h2>Location</h2>
-        <ul>
-          <ul>{orderIds.map(this.renderOrder)}</ul>
-        </ul>
+        <ul style={inLine}>{orderIds.map(this.renderOrder)}</ul>
       </div>
     );
   }

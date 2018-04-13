@@ -6,18 +6,21 @@ const AnyReactComponent = ({ text }) => <div className="col s12 m12 l12">{text}<
 class GoogleMaps extends React.Component {
   static defaultProps = {
   center: {
-    lat: 59.95,
-    lng: 30.33
+    lat: 37.3922376,
+    lng: -122.1089226
   },
-  zoom: 11,
+  zoom: 12,
   lat: 59.955413,
   lng: 30.337844
 };
-  renderOrder = key => {
-    return <li>{key}</li>;
-  };
+renderOrder = key => {
+  const property = this.props.properties[key];
+  return <li>
+    {property.lat} {property.lon}
+  </li>;
+};
   render() {
-    const propertyIds = Object.keys(this.props.properties)
+    const orderIds = Object.keys(this.props.order);
     // const latitudes = properties.filter(property => (property.lat)
     // const {hash, lon, lat, number, street, postcode} = this.props.location;
     // const locationIds = Object.keys(this.props.location);
@@ -36,7 +39,7 @@ class GoogleMaps extends React.Component {
             text={'Kreyser Avrora'}>
 
           </GoogleMapReact>
-
+          <ul>{orderIds.map(this.renderOrder)}</ul>
 
         </div>
         {/* {latitudeIds.map(this.renderOrder)} */}
