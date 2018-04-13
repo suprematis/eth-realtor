@@ -55,7 +55,7 @@ class App extends React.Component {
             <Header />
             <div className="row properties">
               <div className="col s12 m12 l12">
-                <h3 className="col s12 m12 l12">Properties available in the city of Palo Alto</h3>
+                <h3 className="col s12 m12 l12 container">Properties available in the city of Palo Alto</h3>
                 {Object.keys(this.state.properties).map(key => (
                   <Property
                     key={key}
