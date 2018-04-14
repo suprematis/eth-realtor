@@ -54,8 +54,7 @@ class App extends React.Component {
           <div className="property-listing col s12 m6 l6">
             <Header />
             <div className="row properties">
-              <div className="col s12 m12 l12">
-                <h3 className="col s12 m12 l12 container">Properties available in the city of Palo Alto</h3>
+              <h3 className="col s12 m12 l12 container">Properties available in the city of Palo Alto</h3>
                 {Object.keys(this.state.properties).map(key => (
                   <Property
                     key={key}
@@ -65,7 +64,6 @@ class App extends React.Component {
                     details={this.state.properties[key]} />
                 ))}
               </div>
-            </div>
           </div>
           <div className="map-details col s12 m8 l4">
             {/* <Inventory

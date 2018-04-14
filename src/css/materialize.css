@@ -3080,8 +3080,8 @@ td, th {
 
 .collection {
   margin: 0.5rem 0 1rem 0;
-  border: 1px solid #e0e0e0;
-  border-radius: 2px;
+  border-left: 6px solid #A3A0FB;
+  /* border-radius: 2px; */
   overflow: hidden;
   position: relative;
 }
@@ -3091,7 +3091,7 @@ td, th {
   line-height: 1.5rem;
   padding: 10px 20px;
   margin: 0;
-  border-bottom: 1px solid #e0e0e0;
+  /* border-bottom: 1px solid #e0e0e0; */
 }
 
 .collection .collection-item.avatar {
@@ -3150,7 +3150,7 @@ td, th {
   display: block;
   -webkit-transition: .25s;
   transition: .25s;
-  color: #26a69a;
+  color: #fff;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -9047,8 +9047,12 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
    font-size: 1.5rem;
  }
 
-.dashboard a {
-  margin: 0.25rem;
+.dashboard .collection a {
+  font-size: 1rem;
+}
+
+.dashboard .collection .collection-item {
+  background-color: #43425D;
 }
 
 .property-listing .properties h3 {
@@ -9088,6 +9092,7 @@ ul.row.properties.property-card {
 
 .royal-purple {
   background-color: #43425D !important;
+  border: 2px solid #463a86;
 }
 
 .royal-purple-text {
