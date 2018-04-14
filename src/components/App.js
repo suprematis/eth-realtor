@@ -36,6 +36,15 @@ class App extends React.Component {
     order[key] = 1;
     this.setState({ order });
   };
+  deleteOrder = (key) => {
+    // 1. take a copy of setState
+    const order = { ...this.state.order };
+    // 2. update the state
+    delete order[key];
+    // 3. update state
+    this.setState({ order });
+  };
+
   loadSampleProperties = () => {
     this.setState({ properties: sampleProperties });
   };
@@ -55,12 +64,11 @@ class App extends React.Component {
             <Header />
             <div className="row properties">
               <h3 className="col s12 m12 l12 container">Properties available in the city of Palo Alto</h3>
-                {Object.keys(this.state.properties).map(key => (
-                  <Property
-                    key={key}
-                    index={key}
-                    // latitude={this.props.details.lat}
-                    addToOrder={this.addToOrder}
+              {Object.keys(this.state.properties).map(key => (
+                <Property
+                  key={key}
+                  index={key}
+                  addToOrder={this.addToOrder}
                     details={this.state.properties[key]} />
                 ))}
               </div>

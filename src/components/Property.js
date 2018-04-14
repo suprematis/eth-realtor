@@ -1,6 +1,7 @@
 import React from 'react';
 import { formatPrice } from "../helpers";
 // import * as materialize from "../materialize";
+var imgSource =  'https://placeimg.com/300/300/arch';
 
 class Property extends React.Component {
   render() {
@@ -9,14 +10,25 @@ class Property extends React.Component {
       <div className="col s6 m6 l6">
         <div className="card">
           <div className="card-image">
-            <img className="circle responsive-image" alt="" src="https://placeimg.com/300/300/arch" />
+            <img className="circle responsive-image" alt="" src={imgSource} />
           </div>
           {/* <div className="card-stacked"> */}
           <div className="card-content">
-            <p className="card-title grey-text text-darken-4 right flow-text">Property ID: {hash}</p>
-            <i className="material-icons small right">home</i>
-            <span className="flow-text">{number} {street}</span>
+            <div className="row">
+              <div className="col s12">
+                <div className="col s2 right">
+                  <i className="material-icons small">home</i>
+                </div>
+                <div className="col s10 right">
+                  <p className="card-title grey-text text-darken-4 flow-text">Property ID: {hash}</p>
+                </div>
+                <div className="col s12">
+                  <p className="flow-text">{number} {street}</p>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div className="card-action">
             <div className="row">
               <div className="col s12">
