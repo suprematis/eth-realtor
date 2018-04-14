@@ -29,22 +29,27 @@ renderOrder = key => {
     // return prevTotal;
     return (
       <div>
-        <div style={{ height: '50vh', width: '100%' }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyDW28i708MiDFiJ96Ghl1HiNrXdkVS78yw' }}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-            lat={this.props.lat}
-            lng={this.props.lng}
-            text={'Kreyser Avrora'}>
+        <div className="col s12">
+          <div className="card">
+            <div style={{ height: '50vh', width: '100%' }}>
 
-          </GoogleMapReact>
-          <ul>{orderIds.map(this.renderOrder)}</ul>
+              <GoogleMapReact
+                bootstrapURLKeys={{ key: 'AIzaSyDW28i708MiDFiJ96Ghl1HiNrXdkVS78yw' }}
+                defaultCenter={this.props.center}
+                defaultZoom={this.props.zoom}
+                lat={this.props.lat}
+                lng={this.props.lng}
+                text={'Kreyser Avrora'}>
 
+              </GoogleMapReact>
+              <ul>{orderIds.map(this.renderOrder)}</ul>
+
+            </div>
+            {/* {latitudeIds.map(this.renderOrder)} */}
+          </div>
         </div>
-        {/* {latitudeIds.map(this.renderOrder)} */}
       </div>
-    );
+        );
 
       }
     }

@@ -9,7 +9,7 @@ class Dashboard extends React.Component {
     <h4>ETHERESTATE</h4>
     <div className="collection">
       <a className="collection-item" href="./">Home</a>
-      <a className="collection-item" href="#!" onClick={this.props.loadSampleProperties}>Load Sample Properties</a>
+      <a className="collection-item" href="#!" onClick={this.props.loadSampleProperties}>Browse Properties</a>
       {/* <a className="waves-effect waves-light btn-large" onClick={this.props.centerPropertyGoogleMap}>Map</a> */}
       {/* <ul className="collection blue darken-4">
         <li className="collection-item blue darken-4">Add Property</li>

@@ -28,7 +28,6 @@ class Property extends React.Component {
               </div>
             </div>
           </div>
-
           <div className="card-action">
             <div className="row">
               <div className="col s12">
