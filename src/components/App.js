@@ -69,9 +69,9 @@ class App extends React.Component {
                   key={key}
                   index={key}
                   addToOrder={this.addToOrder}
-                    details={this.state.properties[key]} />
-                ))}
-              </div>
+                  details={this.state.properties[key]} />
+              ))}
+            </div>
           </div>
           <div className="map-details col s12 m8 l4">
             {/* <Inventory
@@ -84,19 +84,19 @@ class App extends React.Component {
               />
             </div>
             <div className="row">
-              {/* <div className="col s12">
+              <div className="col s12">
                 <div className="card">
                   <div className="card-content">
-                <span className="card-title">Property Details</span>
-                <p style={inLine}>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                    <span className="card-title">Property Details</span>
+                    <p style={inLine}>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
                   </div>
                   <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
                   </div>
                 </div>
-              </div> */}
+              </div>
               <div className="col s12">
                 {/* <Order
                   order={this.state.order}

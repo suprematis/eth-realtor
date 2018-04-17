@@ -1,16 +1,15 @@
 import React from 'react';
 import { formatPrice } from "../helpers";
 // import * as materialize from "../materialize";
-var imgSource =  'https://placeimg.com/300/300/arch';
 
 class Property extends React.Component {
   render() {
-    const {hash, lon, lat, number, street, postcode} = this.props.details;
+    const {hash, lon, lat, number, street, postcode, imgurl} = this.props.details;
     return (
       <div className="col s6 m6 l6">
         <div className="card">
           <div className="card-image">
-            <img className="circle responsive-image" alt="" src={imgSource} />
+            <img className="responsive-image" alt="" src={imgurl}/>
           </div>
           {/* <div className="card-stacked"> */}
           <div className="card-content">
